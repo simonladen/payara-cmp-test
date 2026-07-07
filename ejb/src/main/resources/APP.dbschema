@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OBJECT CLASS="com.sun.forte4j.modules.dbmodel.SchemaElement" ID="schema1">
+  <versionNo>2</versionNo>
+  <impl>
+    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.SchemaElementImpl" ID="schemaimpl1">
+      <element>
+        <OBJECT REFERENCE="schema1"/>
+      </element>
+      <_catalog>
+        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="catid1">
+          <name></name>
+        </OBJECT>
+      </_catalog>
+      <_username>APP</_username>
+      <_driverName>Apache Derby Embedded JDBC Driver</_driverName>
+      <_driverVersion>10.14.2.0</_driverVersion>
+      <_url>jdbc:derby:sun-appserv-samples</_url>
+      <_name>
+        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="schemanameid1">
+          <name>APP</name>
+        </OBJECT>
+      </_name>
+      <_driver>org.apache.derby.jdbc.EmbeddedDriver</_driver>
+      <tables>
+        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="tablescoll1">
+          <_elms>
+            <ARRAY SIZE="2" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.TableElement">
+              <ROW ROW="0">
+                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.TableElement" ID="dept_te">
+                  <impl>
+                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.TableElementImpl" ID="dept_tei">
+                      <table>DEPARTMENT</table>
+                      <columns>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="dept_cols">
+                          <_elms>
+                            <ARRAY SIZE="2" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                              <ROW ROW="0">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="dept_id_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="dept_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="dept_id_cei">
+                                      <_precision>
+                                        <OBJECT CLASS="java.lang.Integer" ID="int10">
+                                          <value>10</value>
+                                        </OBJECT>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="dept_id_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="dept_id_colname">
+                                          <name>DEPARTMENT_ID</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>false</_isNullable>
+                                      <_type>4</_type>
+                                      <_length>
+                                        <OBJECT/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                              <ROW ROW="1">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="dept_name_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="dept_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="dept_name_cei">
+                                      <_precision>
+                                        <OBJECT CLASS="java.lang.Integer" ID="int255">
+                                          <value>255</value>
+                                        </OBJECT>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="dept_name_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="dept_name_colname">
+                                          <name>NAME</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>true</_isNullable>
+                                      <_type>12</_type>
+                                      <_length>
+                                        <OBJECT REFERENCE="int255"/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="dept_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </columns>
+                      <element>
+                        <OBJECT REFERENCE="dept_te"/>
+                      </element>
+                      <_name>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="dept_tename">
+                          <name>DEPARTMENT</name>
+                        </OBJECT>
+                      </_name>
+                      <isTable>true</isTable>
+                      <keys>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="dept_keys">
+                          <_elms>
+                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.KeyElement">
+                              <ROW ROW="0">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.UniqueKeyElement" ID="dept_pk_uke">
+                                  <_associatedIndex>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.IndexElement" ID="dept_pk_ie">
+                                      <declaringTable>
+                                        <OBJECT REFERENCE="dept_te"/>
+                                      </declaringTable>
+                                      <impl>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.IndexElementImpl" ID="dept_pk_iei">
+                                          <columns>
+                                            <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="dept_pk_ic">
+                                              <_elms>
+                                                <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                                  <ROW ROW="0">
+                                                    <OBJECT REFERENCE="dept_id_ce"/>
+                                                  </ROW>
+                                                </ARRAY>
+                                              </_elms>
+                                              <_template>
+                                                <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                                </ARRAY>
+                                              </_template>
+                                              <owner>
+                                                <OBJECT REFERENCE="dept_tei"/>
+                                              </owner>
+                                            </OBJECT>
+                                          </columns>
+                                          <element>
+                                            <OBJECT REFERENCE="dept_pk_ie"/>
+                                          </element>
+                                          <_name>
+                                            <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="dept_pk_iename">
+                                              <name>PK_DEPARTMENT</name>
+                                            </OBJECT>
+                                          </_name>
+                                          <tei>
+                                            <OBJECT REFERENCE="dept_tei"/>
+                                          </tei>
+                                          <_unique>true</_unique>
+                                        </OBJECT>
+                                      </impl>
+                                    </OBJECT>
+                                  </_associatedIndex>
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="dept_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.UniqueKeyElementImpl" ID="dept_pk_ukei">
+                                      <columns>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="dept_pk_ukcols">
+                                          <_elms>
+                                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                              <ROW ROW="0">
+                                                <OBJECT REFERENCE="dept_id_ce"/>
+                                              </ROW>
+                                            </ARRAY>
+                                          </_elms>
+                                          <_template>
+                                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                            </ARRAY>
+                                          </_template>
+                                          <owner>
+                                            <OBJECT REFERENCE="dept_pk_ukei"/>
+                                          </owner>
+                                        </OBJECT>
+                                      </columns>
+                                      <element>
+                                        <OBJECT REFERENCE="dept_pk_uke"/>
+                                      </element>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="dept_pk_ukname">
+                                          <name>PK_DEPARTMENT</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_primary>true</_primary>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.KeyElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="dept_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </keys>
+                      <indexes>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="dept_idxs">
+                          <_elms>
+                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.IndexElement">
+                              <ROW ROW="0">
+                                <OBJECT REFERENCE="dept_pk_ie"/>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.IndexElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="dept_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </indexes>
+                    </OBJECT>
+                  </impl>
+                </OBJECT>
+              </ROW>
+              <ROW ROW="1">
+                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.TableElement" ID="emp_te">
+                  <impl>
+                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.TableElementImpl" ID="emp_tei">
+                      <table>EMPLOYEE</table>
+                      <columns>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_cols">
+                          <_elms>
+                            <ARRAY SIZE="4" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                              <ROW ROW="0">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="emp_id_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="emp_id_cei">
+                                      <_precision>
+                                        <OBJECT REFERENCE="int10"/>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_id_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_id_colname">
+                                          <name>EMPLOYEE_ID</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>false</_isNullable>
+                                      <_type>4</_type>
+                                      <_length>
+                                        <OBJECT/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                              <ROW ROW="1">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="emp_name_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="emp_name_cei">
+                                      <_precision>
+                                        <OBJECT REFERENCE="int255"/>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_name_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_name_colname">
+                                          <name>NAME</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>true</_isNullable>
+                                      <_type>12</_type>
+                                      <_length>
+                                        <OBJECT REFERENCE="int255"/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                              <ROW ROW="2">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="emp_sal_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="emp_sal_cei">
+                                      <_precision>
+                                        <OBJECT CLASS="java.lang.Integer" ID="int52">
+                                          <value>52</value>
+                                        </OBJECT>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_sal_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_sal_colname">
+                                          <name>SALARY</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>true</_isNullable>
+                                      <_type>8</_type>
+                                      <_length>
+                                        <OBJECT REFERENCE="int52"/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                              <ROW ROW="3">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnElement" ID="emp_deptid_ce">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnElementImpl" ID="emp_deptid_cei">
+                                      <_precision>
+                                        <OBJECT REFERENCE="int10"/>
+                                      </_precision>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_deptid_ce"/>
+                                      </element>
+                                      <_scale>
+                                        <OBJECT/>
+                                      </_scale>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_deptid_colname">
+                                          <name>DEPARTMENT_ID</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_isNullable>true</_isNullable>
+                                      <_type>4</_type>
+                                      <_length>
+                                        <OBJECT/>
+                                      </_length>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="emp_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </columns>
+                      <element>
+                        <OBJECT REFERENCE="emp_te"/>
+                      </element>
+                      <_name>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_tename">
+                          <name>EMPLOYEE</name>
+                        </OBJECT>
+                      </_name>
+                      <isTable>true</isTable>
+                      <keys>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_keys">
+                          <_elms>
+                            <ARRAY SIZE="2" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.KeyElement">
+                              <ROW ROW="0">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ForeignKeyElement" ID="emp_fk_fke">
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ForeignKeyElementImpl" ID="emp_fk_fkei">
+                                      <columns>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_fk_cols">
+                                          <_elms>
+                                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnPairElement">
+                                              <ROW ROW="0">
+                                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.ColumnPairElement" ID="emp_fk_pair">
+                                                  <_referencedColumn>
+                                                    <OBJECT REFERENCE="dept_id_ce"/>
+                                                  </_referencedColumn>
+                                                  <declaringTable>
+                                                    <OBJECT REFERENCE="emp_te"/>
+                                                  </declaringTable>
+                                                  <_localColumn>
+                                                    <OBJECT REFERENCE="emp_deptid_ce"/>
+                                                  </_localColumn>
+                                                  <impl>
+                                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.ColumnPairElementImpl" ID="emp_fk_pairimpl">
+                                                      <element>
+                                                        <OBJECT REFERENCE="emp_fk_pair"/>
+                                                      </element>
+                                                      <_name>
+                                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_fk_pairname">
+                                                          <name>DEPARTMENT_ID;DEPARTMENT_ID</name>
+                                                        </OBJECT>
+                                                      </_name>
+                                                    </OBJECT>
+                                                  </impl>
+                                                </OBJECT>
+                                              </ROW>
+                                            </ARRAY>
+                                          </_elms>
+                                          <_template>
+                                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnPairElement">
+                                            </ARRAY>
+                                          </_template>
+                                          <owner>
+                                            <OBJECT REFERENCE="emp_fk_fkei"/>
+                                          </owner>
+                                        </OBJECT>
+                                      </columns>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_fk_fke"/>
+                                      </element>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_fk_name">
+                                          <name>FK_EMPLOYEE_DEPT</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <tei>
+                                        <OBJECT REFERENCE="emp_tei"/>
+                                      </tei>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                              <ROW ROW="1">
+                                <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.UniqueKeyElement" ID="emp_pk_uke">
+                                  <_associatedIndex>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.IndexElement" ID="emp_pk_ie">
+                                      <declaringTable>
+                                        <OBJECT REFERENCE="emp_te"/>
+                                      </declaringTable>
+                                      <impl>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.IndexElementImpl" ID="emp_pk_iei">
+                                          <columns>
+                                            <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_pk_ic">
+                                              <_elms>
+                                                <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                                  <ROW ROW="0">
+                                                    <OBJECT REFERENCE="emp_id_ce"/>
+                                                  </ROW>
+                                                </ARRAY>
+                                              </_elms>
+                                              <_template>
+                                                <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                                </ARRAY>
+                                              </_template>
+                                              <owner>
+                                                <OBJECT REFERENCE="emp_tei"/>
+                                              </owner>
+                                            </OBJECT>
+                                          </columns>
+                                          <element>
+                                            <OBJECT REFERENCE="emp_pk_ie"/>
+                                          </element>
+                                          <_name>
+                                            <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_pk_iename">
+                                              <name>PK_EMPLOYEE</name>
+                                            </OBJECT>
+                                          </_name>
+                                          <tei>
+                                            <OBJECT REFERENCE="emp_tei"/>
+                                          </tei>
+                                          <_unique>true</_unique>
+                                        </OBJECT>
+                                      </impl>
+                                    </OBJECT>
+                                  </_associatedIndex>
+                                  <declaringTable>
+                                    <OBJECT REFERENCE="emp_te"/>
+                                  </declaringTable>
+                                  <impl>
+                                    <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.UniqueKeyElementImpl" ID="emp_pk_ukei">
+                                      <columns>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_pk_ukcols">
+                                          <_elms>
+                                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                              <ROW ROW="0">
+                                                <OBJECT REFERENCE="emp_id_ce"/>
+                                              </ROW>
+                                            </ARRAY>
+                                          </_elms>
+                                          <_template>
+                                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.ColumnElement">
+                                            </ARRAY>
+                                          </_template>
+                                          <owner>
+                                            <OBJECT REFERENCE="emp_pk_ukei"/>
+                                          </owner>
+                                        </OBJECT>
+                                      </columns>
+                                      <element>
+                                        <OBJECT REFERENCE="emp_pk_uke"/>
+                                      </element>
+                                      <_name>
+                                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="emp_pk_ukname">
+                                          <name>PK_EMPLOYEE</name>
+                                        </OBJECT>
+                                      </_name>
+                                      <_primary>true</_primary>
+                                    </OBJECT>
+                                  </impl>
+                                </OBJECT>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.KeyElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="emp_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </keys>
+                      <indexes>
+                        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.jdbcimpl.DBElementsCollection" ID="emp_idxs">
+                          <_elms>
+                            <ARRAY SIZE="1" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.IndexElement">
+                              <ROW ROW="0">
+                                <OBJECT REFERENCE="emp_pk_ie"/>
+                              </ROW>
+                            </ARRAY>
+                          </_elms>
+                          <_template>
+                            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.IndexElement">
+                            </ARRAY>
+                          </_template>
+                          <owner>
+                            <OBJECT REFERENCE="emp_tei"/>
+                          </owner>
+                        </OBJECT>
+                      </indexes>
+                    </OBJECT>
+                  </impl>
+                </OBJECT>
+              </ROW>
+            </ARRAY>
+          </_elms>
+          <_template>
+            <ARRAY SIZE="0" CLASS="PRIMITIVE" ROWCLASS="com.sun.forte4j.modules.dbmodel.TableElement">
+            </ARRAY>
+          </_template>
+          <owner>
+            <OBJECT REFERENCE="schemaimpl1"/>
+          </owner>
+        </OBJECT>
+      </tables>
+      <_databaseProductVersion>Apache Derby 10.14.2.0</_databaseProductVersion>
+      <_schema>
+        <OBJECT CLASS="com.sun.forte4j.modules.dbmodel.DBIdentifier" ID="userdbid1">
+          <name>APP</name>
+        </OBJECT>
+      </_schema>
+      <_databaseProductName>Apache Derby</_databaseProductName>
+    </OBJECT>
+  </impl>
+</OBJECT>

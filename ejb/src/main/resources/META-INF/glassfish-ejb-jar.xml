@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glassfish-ejb-jar PUBLIC
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 EJB 3.1//EN"
+    "http://glassfish.org/dtds/glassfish-ejb-jar_3_1-1.dtd">
+<glassfish-ejb-jar>
+    <enterprise-beans>
+        <ejb>
+            <ejb-name>DepartmentBean</ejb-name>
+            <jndi-name>ejb/DepartmentBean</jndi-name>
+        </ejb>
+        <ejb>
+            <ejb-name>EmployeeBean</ejb-name>
+            <jndi-name>ejb/EmployeeBean</jndi-name>
+        </ejb>
+        <ejb>
+            <ejb-name>DepartmentServiceBean</ejb-name>
+            <jndi-name>ejb/DepartmentServiceBean</jndi-name>
+        </ejb>
+        <cmp-resource>
+            <jndi-name>jdbc/__default</jndi-name>
+            <create-tables-at-deploy>true</create-tables-at-deploy>
+            <drop-tables-at-undeploy>true</drop-tables-at-undeploy>
+            <database-vendor-name>derby</database-vendor-name>
+        </cmp-resource>
+    </enterprise-beans>
+</glassfish-ejb-jar>

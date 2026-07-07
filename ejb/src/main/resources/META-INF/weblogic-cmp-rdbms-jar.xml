@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-rdbms-jar xmlns="http://xmlns.oracle.com/weblogic/weblogic-rdbms-jar"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <weblogic-rdbms-bean>
+        <ejb-name>DepartmentBean</ejb-name>
+        <data-source-jndi-name>jdbc/__default</data-source-jndi-name>
+        <table-map>
+            <table-name>DEPARTMENT</table-name>
+            <field-map>
+                <cmp-field>departmentId</cmp-field>
+                <dbms-column>DEPARTMENT_ID</dbms-column>
+            </field-map>
+            <field-map>
+                <cmp-field>name</cmp-field>
+                <dbms-column>NAME</dbms-column>
+            </field-map>
+        </table-map>
+        <create-default-dbms-tables>CreateOnly</create-default-dbms-tables>
+    </weblogic-rdbms-bean>
+
+    <weblogic-rdbms-bean>
+        <ejb-name>EmployeeBean</ejb-name>
+        <data-source-jndi-name>jdbc/__default</data-source-jndi-name>
+        <table-map>
+            <table-name>EMPLOYEE</table-name>
+            <field-map>
+                <cmp-field>employeeId</cmp-field>
+                <dbms-column>EMPLOYEE_ID</dbms-column>
+            </field-map>
+            <field-map>
+                <cmp-field>name</cmp-field>
+                <dbms-column>NAME</dbms-column>
+            </field-map>
+            <field-map>
+                <cmp-field>salary</cmp-field>
+                <dbms-column>SALARY</dbms-column>
+            </field-map>
+        </table-map>
+        <create-default-dbms-tables>CreateOnly</create-default-dbms-tables>
+    </weblogic-rdbms-bean>
+
+    <weblogic-rdbms-relation>
+        <relation-name>Department-Employee</relation-name>
+        <weblogic-relationship-role>
+            <relationship-role-name>Employee-belongs-to-Department</relationship-role-name>
+            <relationship-role-map>
+                <column-map>
+                    <!-- FK column in EMPLOYEE table pointing to DEPARTMENT primary key -->
+                    <foreign-key-column>DEPARTMENT_ID</foreign-key-column>
+                    <key-column>DEPARTMENT_ID</key-column>
+                </column-map>
+            </relationship-role-map>
+        </weblogic-relationship-role>
+    </weblogic-rdbms-relation>
+
+</weblogic-rdbms-jar>

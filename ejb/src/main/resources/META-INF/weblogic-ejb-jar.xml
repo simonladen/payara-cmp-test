@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-ejb-jar xmlns="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <weblogic-enterprise-bean>
+        <ejb-name>DepartmentBean</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>ejb/DepartmentLocal</local-jndi-name>
+    </weblogic-enterprise-bean>
+
+    <weblogic-enterprise-bean>
+        <ejb-name>EmployeeBean</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>ejb/EmployeeLocal</local-jndi-name>
+    </weblogic-enterprise-bean>
+
+    <weblogic-enterprise-bean>
+        <ejb-name>DepartmentServiceBean</ejb-name>
+        <stateless-session-descriptor/>
+        <local-jndi-name>ejb/DepartmentServiceHome</local-jndi-name>
+    </weblogic-enterprise-bean>
+
+</weblogic-ejb-jar>

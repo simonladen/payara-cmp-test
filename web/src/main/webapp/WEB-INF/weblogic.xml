@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <context-root>/cmp-test</context-root>
+
+    <ejb-reference-description>
+        <ejb-ref-name>ejb/DepartmentService</ejb-ref-name>
+        <jndi-name>ejb/DepartmentServiceHome</jndi-name>
+    </ejb-reference-description>
+
+</weblogic-web-app>

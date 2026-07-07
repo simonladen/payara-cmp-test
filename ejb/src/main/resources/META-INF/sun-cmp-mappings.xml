@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-cmp-mappings PUBLIC
+    "-//Sun Microsystems, Inc.//DTD Sun Java(TM) Enterprise Edition 1.4//EN"
+    "http://www.sun.com/software/appserver/dtds/sun-cmp-mapping_1_2.dtd">
+<sun-cmp-mappings>
+    <sun-cmp-mapping>
+        <schema>APP</schema>
+        <entity-mapping>
+            <ejb-name>DepartmentBean</ejb-name>
+            <table-name>DEPARTMENT</table-name>
+            <cmp-field-mapping>
+                <field-name>departmentId</field-name>
+                <column-name>DEPARTMENT_ID</column-name>
+            </cmp-field-mapping>
+            <cmp-field-mapping>
+                <field-name>name</field-name>
+                <column-name>NAME</column-name>
+            </cmp-field-mapping>
+            <cmr-field-mapping>
+                <cmr-field-name>employees</cmr-field-name>
+                <column-pair>
+                    <column-name>DEPARTMENT.DEPARTMENT_ID</column-name>
+                    <column-name>EMPLOYEE.DEPARTMENT_ID</column-name>
+                </column-pair>
+            </cmr-field-mapping>
+        </entity-mapping>
+        <entity-mapping>
+            <ejb-name>EmployeeBean</ejb-name>
+            <table-name>EMPLOYEE</table-name>
+            <cmp-field-mapping>
+                <field-name>employeeId</field-name>
+                <column-name>EMPLOYEE_ID</column-name>
+            </cmp-field-mapping>
+            <cmp-field-mapping>
+                <field-name>name</field-name>
+                <column-name>NAME</column-name>
+            </cmp-field-mapping>
+            <cmp-field-mapping>
+                <field-name>salary</field-name>
+                <column-name>SALARY</column-name>
+            </cmp-field-mapping>
+            <cmr-field-mapping>
+                <cmr-field-name>department</cmr-field-name>
+                <column-pair>
+                    <column-name>EMPLOYEE.DEPARTMENT_ID</column-name>
+                    <column-name>DEPARTMENT.DEPARTMENT_ID</column-name>
+                </column-pair>
+            </cmr-field-mapping>
+        </entity-mapping>
+    </sun-cmp-mapping>
+</sun-cmp-mappings>
